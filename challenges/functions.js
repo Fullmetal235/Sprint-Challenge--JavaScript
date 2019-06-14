@@ -39,7 +39,7 @@ let greeting = function(first_name, last_name){
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: Because Nestedfunction() is nested within myFunctiom()
 
 
 const external = "I'm outside the function";
