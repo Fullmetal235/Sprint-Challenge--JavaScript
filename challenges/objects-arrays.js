@@ -1,4 +1,27 @@
 // ==== Objects ====
+let tyrannosaurus = {
+  "name":'Tyrannosaurus',
+  "diet":'canivorous',
+  "weight":'7000kg',
+  "length":'12m',
+  "period":'Late Cretaceous'
+}
+
+let stegosaurus = {
+  "name":'Stegosaurus',
+  "diet":'herbivorous',
+  "weight":'2000kg',
+  "length":'9m',
+  "period":'Late Jurassic'
+}
+
+let velociraptor = {
+  "name":'Stegosaurus',
+  "diet":'carnivorous',
+  "weight":'15kg',
+  "length":'1.8m',
+  "period":'Late Cretaceous'
+}
 
 /* 
   Given the following information about dinosaurs, create 3 objects: 
@@ -15,16 +38,16 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+console.log(tyrannosaurus.weight);
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(velociraptor.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(stegosaurus.length);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(tyrannosaurus.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
@@ -69,14 +92,15 @@ const contactInfo = [];
 //}
 graduates.forEach(function(object){
   let name = object.first_name+ " " +object.email;
-  contactInfo.push(name)})
+  contactInfo.push(name)
+})
 console.log(contactInfo)
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 for (let i = 0; i < graduates.length; i++){
-  if (graduates[i]["university"] < "Uni") {
+  if (graduates[i]["university"].includes('Uni')) {
 
     uni.push(graduates[i]);
 }
